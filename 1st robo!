@@ -1,0 +1,481 @@
+#version 0.3
+import time
+import random
+import math
+import sys
+import pyttsx3
+
+
+
+
+print("> Note :- Enter the keywords in small letters... Since the input is case sensitive ! , by the way the number i like is 7 <")
+engine = pyttsx3.init()
+engine.say(" Note :- Enter the keywords in small letters... Since the input is case sensitive ! , and my favorite number is 7 ")
+engine.runAndWait()
+
+
+print()
+
+engine = pyttsx3.init()
+engine.say(" Tell me your good name ")
+engine.runAndWait()
+a9 = str(input('Tell me your good name : '  ))
+
+print()
+
+engine = pyttsx3.init()
+engine.say(" Thats sound good! ")
+engine.runAndWait()
+
+print (" >>> Thats sound good!  <<<")
+print()
+
+engine = pyttsx3.init()
+engine.say(" Do you know my name? ,  yes or no ")
+engine.runAndWait()
+
+yash = input('Do you know my name? (yes/no) : ')
+print()
+
+if yash == 'yes':
+    
+    engine = pyttsx3.init()
+    engine.say(" Great! , than its more easy with you to interact! , sure we should meet ")
+    engine.runAndWait()
+
+    print(" >   Great! , than its more easy with you to interact! , sure we should meet <")
+    print()
+else:
+
+    engine = pyttsx3.init()
+    engine.say(" OHH, Then you are not aware of my stupidity! ,  Meet me once! ")
+    engine.runAndWait()
+
+    print (" >  OHH, Then you are not aware of my stupidity! ,  Meet me once!  < ")
+    print()
+    
+    engine = pyttsx3.init()
+    engine.say(" Will you? ")
+    engine.runAndWait()
+    jake = (input("Will you? (yes/no) : "))
+    print()
+    if jake == 'yes':
+
+        engine = pyttsx3.init()
+        engine.say(" Nice ")
+        engine.runAndWait()
+
+        print(" >  nice   <")
+        print()
+    else:
+
+
+        
+        engine = pyttsx3.init()
+        engine.say(" Ohk your choice then! ")
+        engine.runAndWait()
+        print (" > Ohk your choice then!  < ")
+    
+        print()
+  
+engine = pyttsx3.init()
+engine.say(" Answer this simple question.. what's 6+8 x 2? ")
+engine.runAndWait()
+  
+top = input(" Ans this simple question.. what's 6+8 x 2? ")
+print()
+
+if top == '22':
+    engine = pyttsx3.init()
+    engine.say(" Good.. now I agree your intelligence.. and maybe , we will be good friends in future! ")
+    engine.runAndWait()  
+    print (" >   Good.. now I agree your intelligence.. and maybe , we will be good friends in future!   < ") 
+else:
+
+    engine = pyttsx3.init()
+    engine.say(" Wrong answer! , Remember maths rule 'BODMAS'? , answer is 22 :) ")
+    engine.runAndWait() 
+    print (" >    Wrong answer! , Remember maths rule 'BODMAS'? , ans is 22 :)   <")
+    
+    
+print()  
+
+engine = pyttsx3.init()
+engine.say(" Now ,  I can create some number operations for you... ")
+engine.runAndWait() 
+
+print (" >   Now ,  I can create some number operations for you...   <")
+print()
+
+
+engine = pyttsx3.init()
+engine.say(" Enter 1st number ")
+engine.runAndWait()      
+c = int(input("Enter 1st number : "))
+
+engine = pyttsx3.init()
+engine.say("Enter 2nd number ")
+engine.runAndWait() 
+j = int(input("Enter 2nd number : "))
+
+print("The addtion of this 2 numbers is = ",c+j)
+print("The sub of this 2 numbers is = ",c-j)
+print("The div of this 2 numbers is = ",c/j)
+print("The multiplication of this 2 numbers is = ",c*j)
+print("The modulus of this 2 numbers is = ",c%j)
+print()
+
+engine = pyttsx3.init()
+engine.say(" That's impressive! , Isn't it? ")
+engine.runAndWait() 
+
+man = (input("That's impressive?, yes or no? : "))
+if man == 'yes':
+   engine = pyttsx3.init()
+   engine.say(" I know am great ")
+   engine.runAndWait() 
+   print(" >  I know am great :)   <")
+else:
+    print(" > Then Nothing can be done!   <")
+print()
+
+engine = pyttsx3.init()
+engine.say(" Type and Hit my fav number to continue.... : ")
+engine.runAndWait() 
+
+op = input('Type and Hit my fav number to continue.... : ')
+print()
+if op == '7':
+  engine = pyttsx3.init()
+  engine.say(" Great, Your memory seem's great! ")
+  engine.runAndWait() 
+
+  print("Great, Your memory seem's great!")
+else:
+  engine = pyttsx3.init()
+  engine.say(" Damn! , Your memory is weak! read the 1st line ")
+  engine.runAndWait()
+  print (" Damn! , Your memory is weak! read the 1st line :( ")
+
+import random
+chars = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+}|;'\[].,?<>L:"
+print()
+
+engine = pyttsx3.init()
+engine.say(" Now, Allow me to find a new password for you , Enter the length of password,  upto which size you want? ")
+engine.runAndWait() 
+
+length= int(input("Now, Allow me to find a new password for facebook for you , Enter the length of password,  upto which size you want? (for eg. 7) : " ))
+password=""
+
+for a in range(length):
+    password+=random.choice(chars)
+    print(password)
+print()
+
+engine = pyttsx3.init()
+engine.say(" Do you want alphabet passwords only? ")
+engine.runAndWait() 
+
+q = str(input("Do you want alphabet passwords only? (yes/no) : "))
+
+if q == 'yes':
+    
+  import random
+  chars = "abcdefghijklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM"
+  print()
+  engine = pyttsx3.init()
+  engine.say(" Enter the length of password,  upto which size you want? ")
+  engine.runAndWait() 
+  length= int(input(" Enter the length of password,  upto which size you want? (for eg. 7) : " ))
+  password=""
+
+  for a in range(length):
+      password+=random.choice(chars)
+  print(password)
+
+else:
+
+    engine = pyttsx3.init()
+    engine.say(" Ohk your choice! ")
+    engine.runAndWait() 
+    print("Ok yrr")
+
+time.sleep(1.5)   
+print()
+
+
+engine = pyttsx3.init()
+engine.say(" Hope u like the above passwords which are suggested to you by me!")
+engine.runAndWait()
+il = input("Hope u like the above passwords which are suggested to you by me!, yes or no? : ")
+
+if il == 'yes':
+    engine = pyttsx3.init()
+    engine.say(" Good ")
+    engine.runAndWait()
+    print(" >   Good   <")
+    
+else:
+    engine = pyttsx3.init()
+    engine.say(" Then nothing can be done! ")
+    engine.runAndWait()
+    print(" >   Then nothing can be done! gth!   < ")
+    
+print()
+
+engine = pyttsx3.init()
+engine.say(" OK now tell me about yourslef ")
+engine.runAndWait()
+
+print(">>>  OK now tell me about urslef!  <<<")
+
+print()
+
+engine = pyttsx3.init()
+engine.say(" Tell me about your occupation you are a student or teacher? ")
+engine.runAndWait()
+
+clor = str(input("Tell me about your occupation (student or teacher?) : "))
+
+if clor == 'student':
+    engine = pyttsx3.init()
+    engine.say(" Ok so you are learning! ")
+    engine.runAndWait()
+    print("Ok so you are learning!")
+
+elif clor == 'teacher':
+    engine = pyttsx3.init()
+    engine.say(" Welcome sir/mam ")
+    engine.runAndWait()
+    print(" >>>  Welcome sir/mam  <<<")
+  
+else:
+    engine = pyttsx3.init()
+    engine.say(" please enter the keywords correctly as they are case sensitive, kindly restart(recompile) the program! ")
+    engine.runAndWait()
+    print("please enter the keywords correctly as they are case sensitive, kindly restart(recompile) the program!")
+
+print()
+
+engine = pyttsx3.init()
+engine.say(" In which field you are? (I,t/cs/else?) ")
+engine.runAndWait()
+
+a8 = str(input(" In which field you are? (it/cs/else?) : "))
+
+if a8 == 'it':
+    engine = pyttsx3.init()
+    engine.say(" Ok, sound's nice... ")
+    engine.runAndWait()
+    print(" >> Ok, sound's nice... << ")
+
+elif a8 == 'cs':
+    engine = pyttsx3.init()
+    engine.say(" nice, you belong's to my field ")
+    engine.runAndWait()
+    print(" >>  NIce, you belong's to my field :)  << ")
+
+else:
+
+    engine = pyttsx3.init()
+    engine.say(" ok nice! ")
+    engine.runAndWait()
+    print(" >>  Ohk nice  << ")
+
+print()
+engine = pyttsx3.init()
+engine.say( a9 )
+engine.runAndWait()
+print("   ", a9) 
+
+engine = pyttsx3.init()
+engine.say(" Can i know about your hobbies? ")
+engine.runAndWait()
+
+a7 = str(input(" Can i know about your hobbies? :) (yes/no) : " ))
+
+if a7 == 'yes':
+
+    engine = pyttsx3.init()
+    engine.say( "ok", a9 )
+    engine.runAndWait()
+    print("   ", a9) 
+
+    engine = pyttsx3.init()
+    engine.say(" Ok please feel free to, share ")
+    engine.runAndWait()
+    print(">>  Ok please feel free to, share :)  << ")
+
+elif a7 == 'no':
+    engine = pyttsx3.init()
+    engine.say("  That's ok your choice ")
+    engine.runAndWait()
+    print(" >>  That's ok your choice :)  << ")
+  
+else:
+    engine = pyttsx3.init()
+    engine.say(" Oh i see , nice! ")
+    engine.runAndWait()
+    print("  >>  Oh i see , nice!  <<")
+
+print()
+
+
+engine = pyttsx3.init()
+engine.say("  From which college you belong? ")
+engine.runAndWait()
+
+p = str(input(" name of your college! : "))
+print()
+engine = pyttsx3.init()
+engine.say("  nice   ")
+engine.runAndWait()
+
+print(' >>  nice  << ')
+engine = pyttsx3.init()
+engine.say("  Well , fell free to talk to me anytime , i am here for you! ")
+engine.runAndWait()
+print()
+print(" >>  Well , fell free to talk to me anytime , i am here for you! :)  <<")
+
+print()
+
+import requests
+
+engine = pyttsx3.init()
+engine.say("  Tell me name of your city  ")
+engine.runAndWait()
+
+
+city = input("Can i know name of your city?\n")
+
+url = f"http://api.weatherapi.com/v1/current.json?key=0e7e3bedb74a4b2598354000242505&q=bulk={city}"
+
+r = requests.get(url)
+
+
+print(r.text)
+print(type(r.text))
+
+print()
+
+engine = pyttsx3.init()
+engine.say("  Xd, Now i have your full details of your city's weather!  ")
+engine.runAndWait()
+
+
+print(" >>  Xd, Now i have your full details of your city's weather! <<")
+
+print()
+
+engine = pyttsx3.init()
+engine.say("  Remember never share sensitive information to an untrusted source!  ")
+engine.runAndWait()
+
+print(" >>  Remember never share sensitive information to an untrusted source! << ")
+
+print()
+
+engine = pyttsx3.init()
+engine.say("  But dont worry you can trust me! :)  ")
+engine.runAndWait()
+
+print("But dont worry you can trust me!")
+
+#continue the code!
+
+
+
+
+
+
+
+engine = pyttsx3.init()
+engine.say("  Is anything else ?, i can help you with? ")
+engine.runAndWait()
+
+a0 = str(input(" Is anything else ?, i can help you with? (yes/no) : " ))
+
+if a0 == 'yes':
+    engine = pyttsx3.init()
+    engine.say("  Ohk , feel free to share! ")
+    engine.runAndWait()
+    print("  >>  Ohk , feel free to share!  <<")
+
+elif a0 == 'no':
+    engine = pyttsx3.init()
+    engine.say("  Ohk then see you later ")
+    engine.runAndWait()
+    print("  >>  Ohk then see you later!  <<")
+    
+else:
+    engine = pyttsx3.init()
+    engine.say("  ok ")
+    engine.runAndWait()
+    print("  >>  ok  <<")
+
+print()
+
+
+engine = pyttsx3.init()
+engine.say(" For further interaction this is my insta! ")
+engine.runAndWait()
+
+print(" >   For further interaction this is my insta!   < ")
+print()
+
+
+
+print (' >   http://www.instagram.com/y4sh._24/   <' )
+
+print()
+
+engine = pyttsx3.init()
+engine.say(" Any questions about the program? ")
+engine.runAndWait()
+
+m = input ( 'Any questions about the program? (yes/no) : ')
+
+if m == 'yes':
+  
+    engine = pyttsx3.init()
+    engine.say(" I'm not answering any of your questions further. . . .  ")
+    engine.runAndWait()
+
+
+    print (" >   I'm not answering any of your questions further. . . .   < ")
+
+else:
+
+    engine = pyttsx3.init()
+    engine.say(" Good by  ")
+    engine.runAndWait()
+
+
+    print("   >   Good by...   < ")
+    
+    print()
+
+    engine = pyttsx3.init()
+    engine.say(" Note : The program is on beta stage currently.. New updates are expected soon  ")
+    engine.runAndWait()
+
+    print(" =====  Note : The program is on beta stage currently.. New updates are expected soon.. =====")
+Link copied to clipboard!
+
+Libraries
+ Personal
+ Shared
+ Team
+Favorites
+Analytics
+Inbox
+Trash
+ Settings
+12 KB / 2 GB
+LXRD 
+4
+Install Jumpshare for Windows
+Communicate faster with video recordings, screenshots, and file sharing.
+Complete your setup:
